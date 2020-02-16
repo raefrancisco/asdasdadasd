@@ -1,0 +1,31 @@
+function infoValidate() {
+let inputA =document.getElementById("options").value;
+let inputB =document.getElementById("eTitle").value;
+let inputC =document.getElementById("date").value;
+let inputD =document.getElementById("dateA").value;
+let inputE =document.getElementById("dateB").value;
+
+
+if(inputA !="Choose Option" && inputB!="" && inputC!="" && inputD!="" && inputE!="")
+{
+    alert("Please fill up all the questions in the form");
+}
+else
+{
+    if(inputC > inputD)
+    {
+    console.log('inputC > inputD reached');
+    if(inputE > inputC)
+    {
+        console.log('inputE > inputC reached');
+        alert("Success! You've accomplished the form");
+    }
+    else
+    {
+        alert("Please enter appropriate dates");
+    }
+}
+}
+}
+
+  
